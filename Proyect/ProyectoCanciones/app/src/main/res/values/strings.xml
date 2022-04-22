@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Registrar canciones</string>
+    <string name="id_hint">Id de la canción</string>
+    <string name="titulo_hint">Título de la canción</string>
+    <string name="artista_hint">Artista</string>
+    <string name="album_hint">Album</string>
+    <string name="fecha_hint">Fecha de lanzamiento</string>
+    <string name="btn_fecha">Fecha</string>
+    <string name="genero_hint">Género musical</string>
+    <string name="compositor_hint">Compositor</string>
+    <string name="btn_alta">Guardar canción</string>
+    <string name="btn_baja">Eliminar canción</string>
+    <string name="btn_buscar_id">Buscar id</string>
+    <string name="btn_actualizar">Actualizar</string>
+    <string name="btn_activity1">Acerca de...</string>
+    <string name="btn_activity2">album</string>
+    <string name="btn_activity3">Nosotros</string>
+</resources>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/linkin_park"
+    tools:context=".MainActivity"
+    >
+
+
+    <EditText
+        android:id="@+id/et_id"
+        android:layout_width="0dp"
+        android:textColorHint="@color/white"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/white"
+        android:ems="10"
+        android:hint="@string/id_hint"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_titulo"
+        android:layout_width="0dp"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColorHint="@color/white"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="@string/titulo_hint"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_id" />
+
+    <EditText
+        android:id="@+id/et_artista"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_marginStart="16dp"
+        android:textStyle="bold"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="@string/artista_hint"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_titulo" />
+
+    <EditText
+        android:id="@+id/et_album"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_marginStart="16dp"
+        android:textStyle="bold"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="@string/album_hint"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_artista" />
+
+    <EditText
+        android:id="@+id/et_genero"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="@string/genero_hint"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_compositor" />
+
+    <EditText
+        android:id="@+id/et_fecha"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="@string/fecha_hint"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_fecha"
+        app:layout_constraintTop_toBottomOf="@+id/et_genero" />
+
+    <Button
+        android:id="@+id/btn_fecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        style="?attr/materialButtonOutlinedStyle"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/design_default_color_error"
+        android:text="@string/btn_fecha"
+        app:layout_constraintEnd_toStartOf="@+id/et_fecha"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_genero" />
+
+    <EditText
+        android:id="@+id/et_compositor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        android:textStyle="bold"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/white"
+        android:ems="10"
+        android:hint="@string/compositor_hint"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_album" />
+
+    <Button
+        android:id="@+id/btn_alta"
+        android:layout_width="190dp"
+        android:layout_height="48dp"
+        android:text="@string/btn_alta"
+        android:backgroundTint="@color/white"
+        style="?attr/materialButtonOutlinedStyle"
+        android:textColor="@color/design_default_color_error"
+        app:layout_constraintEnd_toStartOf="@+id/btn_baja"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_fecha" />
+
+    <Button
+        android:id="@+id/btn_baja"
+        android:layout_width="190dp"
+        android:layout_height="48dp"
+        android:text="@string/btn_baja"
+        style="?attr/materialButtonOutlinedStyle"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/design_default_color_error"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_alta"
+        app:layout_constraintTop_toBottomOf="@+id/et_fecha" />
+
+    <Button
+        android:id="@+id/btn_buscar_id"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="190dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/btn_buscar_id"
+        android:textColor="@color/design_default_color_error"
+        app:layout_constraintEnd_toStartOf="@+id/btn_actualizar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_alta" />
+
+    <Button
+        android:id="@+id/btnactivity1"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="190dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="176dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/btn_activity1"
+        android:textColor="@color/design_default_color_error"
+        app:layout_constraintEnd_toStartOf="@+id/btn_actualizar"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnactivity2" />
+
+    <Button
+        android:id="@+id/btnactivity3"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="190dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/btn_activity3"
+        android:textColor="@color/design_default_color_error"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btnactivity2"
+        app:layout_constraintTop_toBottomOf="@+id/btn_actualizar" />
+
+    <Button
+        android:id="@+id/btnactivity2"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="190dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/btn_activity2"
+        android:textColor="@color/design_default_color_error"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_buscar_id" />
+
+    <Button
+        android:id="@+id/btn_actualizar"
+        android:layout_width="190dp"
+        android:layout_height="48dp"
+        style="?attr/materialButtonOutlinedStyle"
+        android:backgroundTint="@color/white"
+        android:text="@string/btn_actualizar"
+        android:textColor="@color/design_default_color_error"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_buscar_id"
+        app:layout_constraintTop_toBottomOf="@+id/btn_baja" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
